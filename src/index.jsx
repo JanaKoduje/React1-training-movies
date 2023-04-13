@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         path: '/articles',
         element: <Articles />
       },
-   
+
       {
         path: '/reviews',
         element: <Reviews />
@@ -54,11 +54,11 @@ const router = createBrowserRouter([
         element: <Movies />,
         children: [
           {
-           path: "/movies",
-           element: <Navigate to="/movies/3" replace={true} />
+            path: "/movies",
+            element: <Navigate to="/movies/3" replace={true} />
           },
           {
-            path: "/movies/:movieId", 
+            path: "/movies/:movieId",
             element: <Movie />
           }
         ]

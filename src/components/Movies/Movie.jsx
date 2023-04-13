@@ -1,11 +1,11 @@
 import React from 'react';
-import {movies} from "../../movie-database"
+import { movies } from "../../movie-database"
 import { useParams } from 'react-router-dom';
 import './style.css';
 
 
 export const Movie = () => {
-    const {movieId} = useParams();
+    const { movieId } = useParams();
     const movie = movies.find((mov) => mov.id === Number(movieId))
 
 
